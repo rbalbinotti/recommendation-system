@@ -1,0 +1,20 @@
+[project]
+name = "recommendation_system"
+version = "0.1.0"
+description = "Aplicação da técnica de classificação por similaridade"
+authors = [
+    {name = "rbalbinotti", email = "rbalbinotti@gmail.com"},
+]
+dependencies = ["pandas>=2.2.3", "scikit-learn>=1.5.2", "nltk>=3.9.1"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
